@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Avrakhova Laura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ITstep Dnipro, gr. web_2019, dz-js">
+    <title>Avrakhova dz_objects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h3>
+            1. Написать функцию, которая принимает строку и выводит статистику о ней: количество букв, количество цифр и количество других знаков.
+        </h3>
+        <input type="text" id="userString" placeholder="Введите строку" autofocus>
+        <button id="btnUserString">Распарсить строку</button>
+        <div class="result resultParsingString"></div>
+    </section>
+    
+    <section>
+        <h3>
+            2. Написать функцию, которая принимает двузначное число и возвращает его в текстовом виде. Например: 35 – тридцать пять, 89 – восемьдесят девять, 12 – двенадцать. 
+        </h3>
+        <input type="number" id="userNumb" placeholder="Введите двузначное число">
+        <button id="btnUserNumb">Число в текстовом виде</button>
+        <div class="result resultUserNumb"></div>
+    </section>
+
+    <section>
+        <h3>
+            3. Написать функцию, которая заменяет в полученной строке большие буквы на маленькие, маленькие – на большие, а цифры – на знак нижнего подчеркивания. 
+        </h3>
+        <input type="text" id="userStringEnter" placeholder="Введите строку">
+        <button id="btnChangeString">Изменить строку</button>
+        <div class="result resultChangeString"></div>
+    </section>
+
+    <section>
+        <h3>
+            4. Написать функцию, которая преобразует названия cssстилей с дефисом в название в СamelСase стиле: font-size в fontSize, background-color в backgroundColor, textalign в textAlign.
+        </h3>
+        <input type="text" id="doStyle" placeholder="Введите строку">
+        <button id="btnDoStyle">Преобразовать строку</button>
+        <div class="result resultDoStyle"></div>
+    </section>
+
+    <section>
+        <h3>
+            5. Написать функцию, которая принимает словосочетание и превращает его в аббревиатуру. Например: cascading style sheets в CSS, объектноориентированное программирование в ООП
+        </h3>
+        <input type="text" id="doAbbreviation" placeholder="Введите строку">
+        <button id="btnAbbr">Написать аббревиатуру</button>
+        <div class="result resultAbbr"></div>
+    </section>
+
+    <section>
+        <h3>
+            6. Написать функцию, которая принимает любое количество строк, объединяет их в одну длинную строку и возвращает ее. 
+        </h3>
+        <textarea id="doOneString" placeholder="Введите текст"></textarea>
+        <button id="btnOneString">Одна строка</button>
+        <div class="result resultOneString"></div>
+    </section>
+
+    <section>
+        <h3>
+            7. Написать функцию – калькулятор. Функция принимает строку с примером, определяет, какое действие необходимо выполнить (+ - * /), 
+            переводит операнды в числа, решает пример и возвращает результат.
+        </h3>
+        <input type="text" id="doCalc" placeholder="Введите пример">
+        <button id="btnCalc">Калькулятор</button>
+        <div class="result resultCalc"></div>
+    </section>
+
+    <section>
+        <h3>
+            8. Написать функцию, которая получает url и выводит подробную информацию о нем. Например: url “https://itstep.org/ua/about”, 
+            информация “протокол: https, домен: itstep.org, путь: /ua/about”.
+        </h3>
+        <input type="text" id="doUrl" placeholder="Введите URL страницы">
+        <button id="btnUrl">URL</button>
+        <div class="result resultUrl"></div>
+    </section>
+
+    <section>
+        <h3>
+            9. Написать функцию, которая принимает строку и разделитель и возвращает массив подстрок, разбитых с помощью указанного разделителя.
+            Например: строка “10/08/2020”, разделитель “/”, результат: “10”, “08”, “2020”. Выполняя задание, не используйте функцию split().
+        </h3>
+        <span class="task9">
+            <input type="text" id="stringSepar" placeholder="Введите строку">
+            <input type="text" id="doSepar" placeholder="Сепаратор">
+        </span>
+        <button id="btnSepar">Сепарнуть</button>
+        <div class="result resultSepar"></div>
+    </section>
+
+    <section>
+        <h3>
+            10. Написать функцию вывода текста по заданному шаблону. Функция принимает первым параметром шаблон, в тексте которого может использоваться %, 
+            после символа % указывается индекс входного параметра. При выводе вместо %индекс необходимо вывести значение соответствующего входного параметра.
+            Например: print(“Today is %1 %2.%3.%4”, “Monday”, 10, 8, 2020) должна вывести “Today is Monday 10.8.2020”.
+        </h3>
+        <input type="text" id="textTemplate" placeholder="Шаблон">
+        <input type="text" id="indexPrint" placeholder="Параметры">
+        <button id="btnTextIndex">Сделать</button>
+        <div class="result resultTextIndex"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
